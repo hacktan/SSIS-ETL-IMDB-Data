@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:DelayValidation="True"
   DTS:ObjectName="localhost.IMDB_Haktan"
   DTS:DTSID="{0E7E256D-B247-4B27-B63D-F8CC055E5F60}"
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
+      DTS:Retain="True"
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
       DTS:ConnectionString="Data Source=localhost;Initial Catalog=IMDB_Haktan;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
