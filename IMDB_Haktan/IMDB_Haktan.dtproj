@@ -26,16 +26,12 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-17T4GEI</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3BOHykQ2uUygYb6Lba4mGAAAAAACAAAAAAAQZgAAAAEAACAAAADmpK2jimFBYWx7VkM/KfLm8tQiBn7+iMpOpaUZl2HdugAAAAAOgAAAAAIAACAAAAAIXnvKcwzyEQJZhJwaZE6K86hdwX6iVzrIJR+PbU1ak5AAAACYjNKuMDUhceS30b/F3AhXKdekmilaDqn5f3Ha3epbp5uacajl45kQl8gc4d0962u48g8Xm3Ng84SK2/kC67PPTBocoY+CQHBTWpzZjItyayvlognf9eynGXrFNXlE2VBfY/zqLZVDbGxl7cFn02zlFetwCW8nTt399FuANn6QcXGu4BbXFPBlyWHvv3t6Et9AAAAAdlDWuTy2RzXfzlVUoMfTWjCqRr8r3paL3DCESM/h3h/7S8lJIuTEQxQ4H6ogGkTJy56Vd3D8vkvH0zTeLy/ElA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA3BOHykQ2uUygYb6Lba4mGAAAAAACAAAAAAAQZgAAAAEAACAAAABzHSpFgqOI117Pghexved0uDMiLzO97L2OFxkcdgzSZgAAAAAOgAAAAAIAACAAAAAz+g4FPILVXO8e8wJxcQ//XFrkI9gMTgmk97Isc32Wg5AAAACyTwR2ZXnLzUVWrv/19Assju7+XAwRSrnFlbV8UfihbPAM1SHfJz9KNHy1TslTKqGlk6pmjEPd8sdYV7aWtLgm3bvisFQyfsCcq93DHSAwhyP000ZPZRJHG3TZ8Xi6ZhR5mlHVQli+5+NMWFicTmhcOgGkPayeoEcfOWWEewBj8ISxrsC2LA3uB9AGQJwJaHxAAAAAwUpGC8sdJp4X83nSx/wG3VgVwfJVR68koDDm4FZ11LVEzGXDYSvjNFjtLbjJ70RVTutcpoXjVpSpuKoBVDdsyQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
-          <SSIS:Package SSIS:Name="Package2-Join.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Package4-UnionFact.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Package1-SplitTables.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Package5-SCD-V1.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Package5-SCD.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Package3-MakeDimension.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="IMDB_Package.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="localhost.IMDB_Haktan.conmgr" />
@@ -192,84 +188,16 @@
             </SSIS:Parameter>
           </SSIS:ProjectConnectionParameters>
           <SSIS:PackageInfo>
-            <SSIS:PackageMetaData SSIS:Name="Package2-Join.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{D94D9A66-39A7-4395-840D-B9F87079E403}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package2-Join</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">30</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9913CB99-37A5-40FC-85B0-3A8B78F50E46}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Package4-UnionFact.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{36C3FF53-D689-4109-B732-B64943D70C68}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package4-UnionFact</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">20</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{28AF777B-C5DB-4D97-A9CD-5DED73C666D6}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Package1-SplitTables.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{976DC403-D60C-480F-8068-749DCD4A15C7}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package1-SplitTables</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">22</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{601A610E-ECAE-4030-ACFC-5B742EE785F2}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Package5-SCD-V1.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{546E3BF3-8842-498B-854F-397780EA153D}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package5-SCD-V1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">63</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{D01F5CBE-D4C9-450F-95A8-DFBEDA484CA5}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
             <SSIS:PackageMetaData SSIS:Name="Package5-SCD.dtsx">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">{B2177A03-723B-497D-AB4F-A83FE4D79CEA}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">Package5-SCD</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">28</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">39</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{C135D03D-22E9-495E-8B86-724F54FEBF39}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{975E6F5C-63E0-47EF-8C68-75F07275170E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -277,16 +205,16 @@
               </SSIS:Properties>
               <SSIS:Parameters />
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Package3-MakeDimension.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="IMDB_Package.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{E0FDEA32-FB24-43D8-976E-40C1B77D2982}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package3-MakeDimension</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{ACE5FDAE-70C5-4B59-89AF-B291C4795C54}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">IMDB_Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">39</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">15</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{3805798C-B339-4E79-B69F-4CD5BF394FB9}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{6B972B35-FC18-456E-8166-A6909B7824BA}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
